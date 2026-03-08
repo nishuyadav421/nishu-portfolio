@@ -78,39 +78,55 @@ export default function Contact() {
   method="POST"
 >
   <input type="hidden" name="_next" value="https://nishu-portfolio-nine.vercel.app/" />
-  <div>
-    <label htmlFor="name" className="...">Name</label>
-    <input
-      type="text"
-      name="name" // DO NOT FORGET THIS
-      required
-      className="..."
-      placeholder="Your Name"
-    />
-  </div>
-  <div>
-    <label htmlFor="email" className="...">Email</label>
-    <input
-      type="email"
-      name="email" // DO NOT FORGET THIS
-      required
-      className="..."
-      placeholder="your.email@example.com"
-    />
-  </div>
-  <div>
-    <label htmlFor="message" className="...">Message</label>
-    <textarea
-      name="message" // DO NOT FORGET THIS
-      rows={4}
-      required
-      className="..."
-      placeholder="Your message..."
-    ></textarea>
-  </div>
-  <button type="submit" className="...">
-    Send Message
-  </button>
+ {/* 1. Fix the Name Input Styling */}
+<div>
+  <label htmlFor="name" className="block text-sm font-medium text-zinc-700 dark:text-zinc-300 mb-2">
+    Name
+  </label>
+  <input
+    type="text"
+    name="name"
+    required
+    className="w-full px-4 py-3 rounded-xl border border-zinc-300 dark:border-zinc-700 bg-zinc-50 dark:bg-zinc-800 text-zinc-900 dark:text-white focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-colors"
+    placeholder="Your Name"
+  />
+</div>
+
+{/* 2. Fix the Email Input Styling */}
+<div>
+  <label htmlFor="email" className="block text-sm font-medium text-zinc-700 dark:text-zinc-300 mb-2">
+    Email
+  </label>
+  <input
+    type="email"
+    name="email"
+    required
+    className="w-full px-4 py-3 rounded-xl border border-zinc-300 dark:border-zinc-700 bg-zinc-50 dark:bg-zinc-800 text-zinc-900 dark:text-white focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-colors"
+    placeholder="your.email@example.com"
+  />
+</div>
+
+{/* 3. Fix the Message Styling */}
+<div>
+  <label htmlFor="message" className="block text-sm font-medium text-zinc-700 dark:text-zinc-300 mb-2">
+    Message
+  </label>
+  <textarea
+    name="message"
+    rows={4}
+    required
+    className="w-full px-4 py-3 rounded-xl border border-zinc-300 dark:border-zinc-700 bg-zinc-50 dark:bg-zinc-800 text-zinc-900 dark:text-white focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-colors resize-none"
+    placeholder="Your message..."
+  ></textarea>
+</div>
+
+{/* 4. Fix the Button Styling */}
+<button 
+  type="submit" 
+  className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-xl text-white bg-emerald-600 hover:bg-emerald-700 transition-colors"
+>
+  Send Message
+</button>
 </form>
           </motion.div>
         </div>
