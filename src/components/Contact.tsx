@@ -48,16 +48,21 @@ export default function Contact() {
             </div>
 
             <div className="flex items-center p-6 bg-white dark:bg-zinc-900 rounded-2xl border border-zinc-200 dark:border-zinc-800 shadow-sm hover:shadow-md transition-shadow">
-              <div className="bg-emerald-100 dark:bg-emerald-900/30 p-4 rounded-full mr-6">
-                <Github className="h-6 w-6 text-emerald-600 dark:text-emerald-400" />
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold text-zinc-900 dark:text-white mb-1">GitHub</h3>
-                <a href="#" target="_blank" rel="noopener noreferrer" className="text-zinc-600 hover:text-emerald-600 dark:text-zinc-400 dark:hover:text-emerald-400 transition-colors">
-                  github.com/nishuy421 (Placeholder)
-                </a>
-              </div>
-            </div>
+  <div className="bg-emerald-100 dark:bg-emerald-900/30 p-4 rounded-full mr-6">
+    <Github className="h-6 w-6 text-emerald-600 dark:text-emerald-400" />
+  </div>
+  <div>
+    <h3 className="text-lg font-semibold text-zinc-900 dark:text-white mb-1">GitHub</h3>
+    <a 
+      href="https://github.com/nishuyadav421" 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      className="text-zinc-600 hover:text-emerald-600 dark:text-zinc-400 dark:hover:text-emerald-400 transition-colors"
+    >
+      github.com/nishuyadav421
+    </a>
+  </div>
+</div>
           </motion.div>
 
           <motion.div
@@ -67,48 +72,46 @@ export default function Contact() {
             transition={{ duration: 0.5 }}
             className="bg-white dark:bg-zinc-900 p-8 rounded-2xl border border-zinc-200 dark:border-zinc-800 shadow-sm"
           >
-            <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
-              <div>
-                <label htmlFor="name" className="block text-sm font-medium text-zinc-700 dark:text-zinc-300 mb-2">
-                  Name
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  className="w-full px-4 py-3 rounded-xl border border-zinc-300 dark:border-zinc-700 bg-zinc-50 dark:bg-zinc-800 text-zinc-900 dark:text-white focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-colors"
-                  placeholder="Your Name"
-                />
-              </div>
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium text-zinc-700 dark:text-zinc-300 mb-2">
-                  Email
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  className="w-full px-4 py-3 rounded-xl border border-zinc-300 dark:border-zinc-700 bg-zinc-50 dark:bg-zinc-800 text-zinc-900 dark:text-white focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-colors"
-                  placeholder="your.email@example.com"
-                />
-              </div>
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium text-zinc-700 dark:text-zinc-300 mb-2">
-                  Message
-                </label>
-                <textarea
-                  id="message"
-                  rows={4}
-                  className="w-full px-4 py-3 rounded-xl border border-zinc-300 dark:border-zinc-700 bg-zinc-50 dark:bg-zinc-800 text-zinc-900 dark:text-white focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-colors resize-none"
-                  placeholder="Your message..."
-                ></textarea>
-              </div>
-              <button
-                type="submit"
-                className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-xl text-white bg-emerald-600 hover:bg-emerald-700 transition-colors"
-              >
-                Send Message
-                <Send className="ml-2 h-5 w-5" />
-              </button>
-            </form>
+            <form 
+  className="space-y-6" 
+  action="https://formspree.io/f/mgonvyar" 
+  method="POST"
+>
+  <input type="hidden" name="_next" value="https://nishu-portfolio-nine.vercel.app/" />
+  <div>
+    <label htmlFor="name" className="...">Name</label>
+    <input
+      type="text"
+      name="name" // DO NOT FORGET THIS
+      required
+      className="..."
+      placeholder="Your Name"
+    />
+  </div>
+  <div>
+    <label htmlFor="email" className="...">Email</label>
+    <input
+      type="email"
+      name="email" // DO NOT FORGET THIS
+      required
+      className="..."
+      placeholder="your.email@example.com"
+    />
+  </div>
+  <div>
+    <label htmlFor="message" className="...">Message</label>
+    <textarea
+      name="message" // DO NOT FORGET THIS
+      rows={4}
+      required
+      className="..."
+      placeholder="Your message..."
+    ></textarea>
+  </div>
+  <button type="submit" className="...">
+    Send Message
+  </button>
+</form>
           </motion.div>
         </div>
       </div>
