@@ -69,22 +69,27 @@ export default function Projects() {
                 </div>
               </div>
               
-              <div className="px-6 py-4 bg-zinc-50 dark:bg-zinc-800/50 border-t border-zinc-100 dark:border-zinc-800 flex justify-between items-center mt-auto">
-                <a 
-                  href={project.github} 
-                  className="flex items-center text-sm font-medium text-zinc-600 hover:text-emerald-600 dark:text-zinc-400 dark:hover:text-emerald-400 transition-colors"
-                >
-                  <Github className="w-4 h-4 mr-2" />
-                  Code
-                </a>
-                <a 
-                  href={project.demo} 
-                  className="flex items-center text-sm font-medium text-zinc-600 hover:text-emerald-600 dark:text-zinc-400 dark:hover:text-emerald-400 transition-colors"
-                >
-                  <ExternalLink className="w-4 h-4 mr-2" />
-                  Live Demo
-                </a>
-              </div>
+              // Is block ko replace karein (Footer area of the card)
+<div className="px-6 py-4 bg-zinc-50 dark:bg-zinc-800/50 border-t border-zinc-100 dark:border-zinc-800 flex justify-between items-center mt-auto">
+  <a 
+    href={project.github} 
+    target="_blank" // Naya tab kholne ke liye
+    rel="noopener noreferrer" // Security ke liye
+    className="flex items-center text-sm font-medium text-zinc-600 hover:text-emerald-600 dark:text-zinc-400 dark:hover:text-emerald-400 transition-colors"
+  >
+    <Github className="w-4 h-4 mr-2" />
+    Code
+  </a>
+  <a 
+    href={project.demo} 
+    target="_blank" // Naya tab kholne ke liye
+    rel="noopener noreferrer" // Security ke liye
+    className="flex items-center text-sm font-medium text-zinc-600 hover:text-emerald-600 dark:text-zinc-400 dark:hover:text-emerald-400 transition-colors"
+  >
+    <ExternalLink className="w-4 h-4 mr-2" />
+    Live Demo
+  </a>
+</div>
             </motion.div>
           ))}
         </div>
