@@ -39,13 +39,14 @@ export default function Hero() {
               <Mail className="ml-2 -mr-1 h-5 w-5" />
             </a>
             <a 
-           href="/resume.pdf"
-           target="_blank"
-             rel="noopener noreferrer"
-          className="inline-flex items-center justify-center px-8 py-3 border border-zinc-300 rounded-xl"
-             >
-           Download Resume
-           </a>
+  href="/resume.pdf" // Yeh file public folder mein honi chahiye
+  target="_blank"
+  rel="noopener noreferrer"
+  download="Nishu_Kumar_Yadav_Resume.pdf" // Isse download trigger hoga
+  className="inline-flex items-center justify-center px-8 py-3 border border-zinc-300 dark:border-zinc-700 text-base font-medium rounded-xl text-zinc-700 dark:text-zinc-300 bg-white dark:bg-zinc-900 hover:bg-zinc-50 dark:hover:bg-zinc-800 transition-colors w-full sm:w-auto"
+>
+  Download Resume
+</a>
           </div>
         </motion.div>
       </div>
