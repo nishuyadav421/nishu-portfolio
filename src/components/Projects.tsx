@@ -4,10 +4,13 @@ import { Github, ExternalLink } from 'lucide-react';
 const projects = [
   {
     title: "Online Student Management System",
-    description: "A comprehensive web application to manage student records, attendance, and grades. Features role-based access control for admins, teachers, and students.",
-    tech: ["Java", "Spring Boot", "MySQL", "HTML/CSS", "JavaScript"],
-    github: "#",
-    demo: "#"
+    description: "A comprehensive web application to manage student records, attendance, and grades. Built with a focus on cloud deployment and database integrity.",
+    // Tags update kar diye hain jo aapne use kiye hain
+    tech: ["Java", "Servlets", "JSP", "MySQL", "Railway Cloud"], 
+    // Apna GitHub link yahan dalein
+    github: "https://github.com/nishuyadav421/SchoolManagement", 
+    // Apna Railway live link yahan dalein
+    demo: "https://schoolmanagement-production-e9b4.up.railway.app/login.jsp"
   },
   {
     title: "E-commerce Web Application",
