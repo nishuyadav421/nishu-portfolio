@@ -7,7 +7,7 @@ const highlightedProject = {
   description: "A comprehensive cloud-based web application to manage student records, attendance, and grades. Built with a focus on cloud deployment and database integrity using Java Servlets and MySQL.",
   tech: ["Java", "Servlets", "JSP", "MySQL", "Railway Cloud"],
   github: "https://github.com/nishuyadav421/SchoolManagement",
-  demo: "https://schoolmanagement-production-e9b4.up.railway.app/login.jsp"
+  demo: "https://schoolmanagement-production-e9b4.up.railway.app/SchoolManagement/login.jsp"
 };
 
 // Yeh dono niche grid mein rahenge
